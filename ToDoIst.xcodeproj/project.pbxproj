@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BC4A0CF1A401EF30007ABCC /* plugins-TDoist.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC4A0CE1A401EF30007ABCC /* plugins-TDoist.png */; };
+		9BDAA2E91A3F75660001B133 /* ToDoIst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2E81A3F75660001B133 /* ToDoIst.m */; };
+		9BDAA2EC1A3F75740001B133 /* ToDoIstConfigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2EB1A3F75740001B133 /* ToDoIstConfigView.m */; };
+		9BDAA2EE1A3F759D0001B133 /* AMPluginFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDAA2ED1A3F759D0001B133 /* AMPluginFramework.framework */; };
+		9BDAA2F21A3F87940001B133 /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2F11A3F87940001B133 /* APIHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BC4A0CE1A401EF30007ABCC /* plugins-TDoist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plugins-TDoist.png"; sourceTree = "<group>"; };
+		9BDAA2DD1A3F75250001B133 /* ToDoIst.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoIst.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDAA2E11A3F75250001B133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BDAA2E71A3F75660001B133 /* ToDoIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoIst.h; sourceTree = "<group>"; };
+		9BDAA2E81A3F75660001B133 /* ToDoIst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoIst.m; sourceTree = "<group>"; };
+		9BDAA2EA1A3F75740001B133 /* ToDoIstConfigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoIstConfigView.h; sourceTree = "<group>"; };
+		9BDAA2EB1A3F75740001B133 /* ToDoIstConfigView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoIstConfigView.m; sourceTree = "<group>"; };
+		9BDAA2ED1A3F759D0001B133 /* AMPluginFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMPluginFramework.framework; sourceTree = "<group>"; };
+		9BDAA2F01A3F87940001B133 /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIHelper.h; path = API/APIHelper.h; sourceTree = "<group>"; };
+		9BDAA2F11A3F87940001B133 /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIHelper.m; path = API/APIHelper.m; sourceTree = "<group>"; };
+		9BDAA2F31A3F87B10001B133 /* APIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIProtocol.h; path = API/APIProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BDAA2DA1A3F75250001B133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDAA2EE1A3F759D0001B133 /* AMPluginFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BDAA2D41A3F75250001B133 = {
+			isa = PBXGroup;
+			children = (
+				9BDAA2DF1A3F75250001B133 /* ToDoIst */,
+				9BDAA2DE1A3F75250001B133 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BDAA2DE1A3F75250001B133 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BDAA2DD1A3F75250001B133 /* ToDoIst.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BDAA2DF1A3F75250001B133 /* ToDoIst */ = {
+			isa = PBXGroup;
+			children = (
+				9BDAA2EF1A3F877B0001B133 /* API */,
+				9BDAA2E01A3F75250001B133 /* Supporting Files */,
+				9BDAA2E71A3F75660001B133 /* ToDoIst.h */,
+				9BDAA2E81A3F75660001B133 /* ToDoIst.m */,
+				9BDAA2EA1A3F75740001B133 /* ToDoIstConfigView.h */,
+				9BDAA2EB1A3F75740001B133 /* ToDoIstConfigView.m */,
+			);
+			path = ToDoIst;
+			sourceTree = "<group>";
+		};
+		9BDAA2E01A3F75250001B133 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BC4A0CE1A401EF30007ABCC /* plugins-TDoist.png */,
+				9BDAA2ED1A3F759D0001B133 /* AMPluginFramework.framework */,
+				9BDAA2E11A3F75250001B133 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BDAA2EF1A3F877B0001B133 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9BDAA2F01A3F87940001B133 /* APIHelper.h */,
+				9BDAA2F11A3F87940001B133 /* APIHelper.m */,
+				9BDAA2F31A3F87B10001B133 /* APIProtocol.h */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BDAA2DC1A3F75250001B133 /* ToDoIst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDAA2E41A3F75250001B133 /* Build configuration list for PBXNativeTarget "ToDoIst" */;
+			buildPhases = (
+				9BDAA2D91A3F75250001B133 /* Sources */,
+				9BDAA2DA1A3F75250001B133 /* Frameworks */,
+				9BDAA2DB1A3F75250001B133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDoIst;
+			productName = ToDoIst;
+			productReference = 9BDAA2DD1A3F75250001B133 /* ToDoIst.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BDAA2D51A3F75250001B133 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = SpikedSoftware;
+				TargetAttributes = {
+					9BDAA2DC1A3F75250001B133 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 9BDAA2D81A3F75250001B133 /* Build configuration list for PBXProject "ToDoIst" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9BDAA2D41A3F75250001B133;
+			productRefGroup = 9BDAA2DE1A3F75250001B133 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BDAA2DC1A3F75250001B133 /* ToDoIst */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BDAA2DB1A3F75250001B133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC4A0CF1A401EF30007ABCC /* plugins-TDoist.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BDAA2D91A3F75250001B133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDAA2E91A3F75660001B133 /* ToDoIst.m in Sources */,
+				9BDAA2F21A3F87940001B133 /* APIHelper.m in Sources */,
+				9BDAA2EC1A3F75740001B133 /* ToDoIstConfigView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9BDAA2E21A3F75250001B133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9BDAA2E31A3F75250001B133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9BDAA2E51A3F75250001B133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToDoIst",
+				);
+				INFOPLIST_FILE = ToDoIst/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9BDAA2E61A3F75250001B133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToDoIst",
+				);
+				INFOPLIST_FILE = ToDoIst/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BDAA2D81A3F75250001B133 /* Build configuration list for PBXProject "ToDoIst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDAA2E21A3F75250001B133 /* Debug */,
+				9BDAA2E31A3F75250001B133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDAA2E41A3F75250001B133 /* Build configuration list for PBXNativeTarget "ToDoIst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDAA2E51A3F75250001B133 /* Debug */,
+				9BDAA2E61A3F75250001B133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BDAA2D51A3F75250001B133 /* Project object */;
+}
