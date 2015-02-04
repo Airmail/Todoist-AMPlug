@@ -43,20 +43,20 @@
             [emailLabel setSelectable:false];
             [emailLabel setDrawsBackground:false];
             x += emailLabel.frame.size.width + 10.0f;
-            
+
             self.emailAddress = [[NSTextField alloc] initWithFrame:CGRectMake(x, y, 180.0f, 22.0f)];
             [self.emailAddress setEditable:YES];
             
             x = 0;
             y += self.emailAddress.frame.size.height + 5.0f;
-            
+
             NSTextView *passwordLabel = [[NSTextView alloc] initWithFrame:CGRectMake(x, y, 100.0f, 22.0f)];
             [passwordLabel setString:@"Password"];
             [passwordLabel setEditable:false];
             [passwordLabel setSelectable:false];
             [passwordLabel setDrawsBackground:false];
             x += passwordLabel.frame.size.width + 10.0f;
-            
+
             self.password = [[NSSecureTextField alloc] initWithFrame:CGRectMake(x, y, 120.f, 22.0f)];
             [self.password setEditable:YES];
             
@@ -78,15 +78,15 @@
             [apiKeyLabel setSelectable:false];
             [apiKeyLabel setDrawsBackground:false];
             x += apiKeyLabel.frame.size.width + 10.0f;
-            
+
             self.apiKey = [[NSTextField alloc] initWithFrame:CGRectMake(x, y, 250.0f, 22.0f)];
             [self.apiKey setEditable: NO];
-            [self.apiKey setPlaceholderString:@"API Key from your account"];
+//            [self.apiKey setStringValue:@""];
             
             NSString *apiKey = [[self myPlugin] getAPIToken];
             if (apiKey != nil)
                 [self.apiKey setStringValue:apiKey];
-            
+
             x = 0;
             y += self.apiKey.frame.size.height + 5.0;
             
@@ -96,7 +96,7 @@
             [saveButton setBezelStyle:NSRoundedBezelStyle];
             [saveButton setTarget:self];
             [saveButton setAction:@selector(saveChangesAction:)];
-            
+
             [self addSubview:emailLabel];
             [self addSubview:self.emailAddress];
             [self addSubview:passwordLabel];
@@ -108,6 +108,8 @@
             
         }
         @catch (NSException *exception) {
+            
+            NSLog(@"ToDoIst Exception %@",exception);
             NSAlert *alertView = [NSAlert new];
             [alertView setMessageText:@"Error when creating view"];
             [alertView runModal];
