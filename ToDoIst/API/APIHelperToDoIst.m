@@ -25,10 +25,19 @@ static NSOperationQueue *operationQueue = nil;
     return operationQueue;
 }
 
++ (NSString *) URLEncodedString_todoist: (NSString *)input {
+    CFStringRef encoded = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                                  (__bridge CFStringRef)input,
+                                                                  NULL,
+                                                                  CFSTR("!*'\"();:@&=+$,/?%#[]% "),
+                                                                  kCFStringEncodingUTF8);
+    return CFBridgingRelease(encoded);
+}
+
 + (NSString *) URLEncodedString_ch: (NSString *)input {
     NSMutableString * output = [NSMutableString string];
     const unsigned char * source = (const unsigned char *)[input UTF8String];
-    int sourceLen = strlen((const char *)source);
+    int sourceLen = (int)strlen((const char *)source);
     for (int i = 0; i < sourceLen; ++i) {
         const unsigned char thisChar = source[i];
         if (thisChar == ' '){
@@ -65,7 +74,10 @@ static NSOperationQueue *operationQueue = nil;
 
 +(void)sendToInboxWithContent:(NSString *)content andApiToken:(NSString *)token andDelegate:(id)delegate
 {
-    NSString *apiUrl = [NSString stringWithFormat:@"https://api.todoist.com/API/addItem?content=%@&token=%@", [self URLEncodedString_ch:content], token];
+//    NSLog(@"content %@",content);
+
+    NSString *apiUrl = [NSString stringWithFormat:@"https://api.todoist.com/API/addItem?content=%@&token=%@", [self URLEncodedString_todoist:content], token];
+
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:apiUrl] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20];
     [request setHTTPMethod:@"GET"];
 

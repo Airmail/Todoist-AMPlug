@@ -16,6 +16,6 @@
 -(void)setAPIToken: (NSString *)apiToken;
 -(NSString *)getAPIToken;
 
--(BOOL)Save;
+//-(BOOL)Save;
 
 @end
