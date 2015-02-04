@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface APIHelper : NSObject
+@interface APIHelperToDoIst : NSObject
 
 +(void)getUserWithEmail: (NSString *)email andPassword: (NSString *)password andDelegate: (id)delegate;
 +(void)sendToInboxWithContent: (NSString *)content andApiToken: (NSString *)token andDelegate: (id)delegate;

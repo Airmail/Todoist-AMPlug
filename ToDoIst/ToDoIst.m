@@ -119,7 +119,7 @@ const NSString *apitoken_key = @"apitoken";
         for ( int i = 0; i < action.messages.count; i ++ )
         {
             AMPMessage *msg = (AMPMessage *)[action.messages objectAtIndex:i];
-            [APIHelper sendToInboxWithContent:msg.subject andApiToken:[self getAPIToken] andDelegate:self];
+            [APIHelperToDoIst sendToInboxWithContent:msg.subject andApiToken:[self getAPIToken] andDelegate:self];
         }
     }
     

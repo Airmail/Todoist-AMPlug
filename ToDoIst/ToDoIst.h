@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AMPluginFramework/AMPluginFramework.h>
 #import "APIProtocol.h"
-#import "APIHelper.h"
+#import "APIHelperToDoIst.h"
 
 @interface ToDoIst : AMPlugin<APIProtocol>
 

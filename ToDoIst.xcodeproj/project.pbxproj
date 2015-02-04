@@ -11,7 +11,7 @@
 		9BDAA2E91A3F75660001B133 /* ToDoIst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2E81A3F75660001B133 /* ToDoIst.m */; };
 		9BDAA2EC1A3F75740001B133 /* ToDoIstConfigView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2EB1A3F75740001B133 /* ToDoIstConfigView.m */; };
 		9BDAA2EE1A3F759D0001B133 /* AMPluginFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BDAA2ED1A3F759D0001B133 /* AMPluginFramework.framework */; };
-		9BDAA2F21A3F87940001B133 /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2F11A3F87940001B133 /* APIHelper.m */; };
+		9BDAA2F21A3F87940001B133 /* APIHelperToDoIst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDAA2F11A3F87940001B133 /* APIHelperToDoIst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		9BDAA2EA1A3F75740001B133 /* ToDoIstConfigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoIstConfigView.h; sourceTree = "<group>"; };
 		9BDAA2EB1A3F75740001B133 /* ToDoIstConfigView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoIstConfigView.m; sourceTree = "<group>"; };
 		9BDAA2ED1A3F759D0001B133 /* AMPluginFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMPluginFramework.framework; sourceTree = "<group>"; };
-		9BDAA2F01A3F87940001B133 /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIHelper.h; path = API/APIHelper.h; sourceTree = "<group>"; };
-		9BDAA2F11A3F87940001B133 /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIHelper.m; path = API/APIHelper.m; sourceTree = "<group>"; };
+		9BDAA2F01A3F87940001B133 /* APIHelperToDoIst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIHelperToDoIst.h; path = API/APIHelperToDoIst.h; sourceTree = "<group>"; };
+		9BDAA2F11A3F87940001B133 /* APIHelperToDoIst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIHelperToDoIst.m; path = API/APIHelperToDoIst.m; sourceTree = "<group>"; };
 		9BDAA2F31A3F87B10001B133 /* APIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIProtocol.h; path = API/APIProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,8 +82,8 @@
 		9BDAA2EF1A3F877B0001B133 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				9BDAA2F01A3F87940001B133 /* APIHelper.h */,
-				9BDAA2F11A3F87940001B133 /* APIHelper.m */,
+				9BDAA2F01A3F87940001B133 /* APIHelperToDoIst.h */,
+				9BDAA2F11A3F87940001B133 /* APIHelperToDoIst.m */,
 				9BDAA2F31A3F87B10001B133 /* APIProtocol.h */,
 			);
 			name = API;
@@ -157,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BDAA2E91A3F75660001B133 /* ToDoIst.m in Sources */,
-				9BDAA2F21A3F87940001B133 /* APIHelper.m in Sources */,
+				9BDAA2F21A3F87940001B133 /* APIHelperToDoIst.m in Sources */,
 				9BDAA2EC1A3F75740001B133 /* ToDoIstConfigView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

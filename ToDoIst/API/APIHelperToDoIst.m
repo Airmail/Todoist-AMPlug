@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 SpikedSoftware. All rights reserved.
 //
 
-#import "APIHelper.h"
+#import "APIHelperToDoIst.h"
 #import "APIProtocol.h"
 @import AppKit;
 
 static NSOperationQueue *operationQueue = nil;
 
-@implementation APIHelper
+@implementation APIHelperToDoIst
 
 +(NSOperationQueue *)operationQueue
 {

@@ -9,7 +9,7 @@
 #import "ToDoIstConfigView.h"
 #import "ToDoIst.h"
 #import "APIProtocol.h"
-#import "APIHelper.h"
+#import "APIHelperToDoIst.h"
 
 @interface ToDoIstConfigView ()
 
@@ -154,7 +154,7 @@
     }
     else
     {
-        [APIHelper getUserWithEmail:self.emailAddress.stringValue andPassword:self.password.stringValue andDelegate:self];
+        [APIHelperToDoIst getUserWithEmail:self.emailAddress.stringValue andPassword:self.password.stringValue andDelegate:self];
     }
 }
 
