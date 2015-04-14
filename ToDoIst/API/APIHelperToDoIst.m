@@ -62,8 +62,10 @@ static NSOperationQueue *operationQueue = nil;
     
     [NSURLConnection sendAsynchronousRequest:request queue:[self operationQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSString *body = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        if ([body isEqualToString:@"\"LOGIN_ERROR\""])
+        if (!data || [body isEqualToString:@"\"LOGIN_ERROR\""])
+        {
             [delegate finishedCallFor:@"GetUser" withData:nil];
+        }
         else
         {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -83,8 +85,10 @@ static NSOperationQueue *operationQueue = nil;
 
     [NSURLConnection sendAsynchronousRequest:request queue:[self operationQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         NSString *body = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        if ([body isEqualToString:@"\"ERROR_PROJECT_NOT_FOUND\""] || [body isEqualToString:@"\"ERROR_WRONG_DATE_SYNTAX\""])
+        if (!data || [body isEqualToString:@"\"ERROR_PROJECT_NOT_FOUND\""] || [body isEqualToString:@"\"ERROR_WRONG_DATE_SYNTAX\""])
+        {
             [delegate finishedCallFor:@"SendToInbox" withData:nil];
+        }
         else
         {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
